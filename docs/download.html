@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <link rel="stylesheet" href="css/awsm.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>awsm.css</h1>
+      <p>It makes your <abbr title="HyperText Markup Language is the standard markup language for creating web pages and web applications.">HTML</abbr> beautiful
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="elements.html">Elements</a></li>
+          <li>Download</li>
+          <li><a href="plugins.html">Plugins</a></li>
+          <li><a href="https://github.com/igoradamenko/awsm.css" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Download</h1>
+        <p>Download the latest version here — <a href="css/awsm.css">awsm.css</a>.
+        </p>
+        <p>Minified — <a href="css/awsm.min.css">awsm.min.css</a> (≈2 Kb after gzip).
+        </p>
+        <p>You also can <a href="https://github.com/igoradamenko/awsm.css/archive/master.zip">download tarball of the project</a>.
+        </p>
+        <section>
+          <h2><a id="unpkg" href="#unpkg" aria-hidden="true"></a>unpkg
+          </h2>
+          <p>Also you can use unpkg for link latest or exact version of library:</p>
+          <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css"&gt;</code></pre>
+          <p>Get more information about the unpkg <abbr title="A content delivery network or content distribution network is a globally distributed network of proxy servers deployed in multiple data centers.">CDN</abbr> on <a href="https://unpkg.com/" title="unpkg is a fast, global content delivery network for stuff that is published to npm" target="_blank">unpkg.com</a>.
+          </p>
+        </section>
+        <section>
+          <h2><a id="postcss" href="#postcss" aria-hidden="true"></a>PostCSS API
+          </h2>
+          <p>If you install <a href="https://www.npmjs.com/package/awsm.css" title="awsm.css in npm registry" target="_blank">npm package</a>, you can use library as PostCSS plugin:
+          </p>
+          <pre><code>const postcss = require('postcss');
+const awsm = require('awsm.css');
+
+postcss([awsm()]).process('a {color: red}').then(result =&gt; {
+  console.log(result.css); // awsm.css prepends your CSS 
+});</code></pre>
+        </section>
+        <section>
+          <h2><a id="license" href="#license" aria-hidden="true"></a>License
+          </h2>
+          <p>awsm.css licensed under <a href="http://en.wikipedia.org/wiki/MIT_License">the MIT</a>.
+          </p>
+          <p>
+            The MIT License places almost no restrictions on what you can do with this lib.
+            You are free to use it in commercial projects as long as the copyright is left intact.
+          </p>
+        </section>
+        <section>
+          <h2><a id="credits" href="#credits" aria-hidden="true"></a>Credits
+          </h2>
+          <p>Thanks to <a href="https://www.instagram.com/xnmlsx/" title="@xnmlsx in Instagram" target="_blank">Anastasia Medvedeva</a> for photo & video used in examples.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Igor Adamenko</p>
+    </footer>
+  </body>
+</html>

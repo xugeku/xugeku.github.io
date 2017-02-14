@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular — Igor Adamenko</title>
+    <link rel="stylesheet" href="../../css/awsm.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+      /* for beautiful back link */
+      nav li:first-child a::before {
+        content: '←\a0';
+        left: -1.2em;
+      }
+      
+      @media (min-width: 700px) {
+        nav li:first-child a::before {
+          position: absolute;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Igor Adamenko</h1>
+      <nav>
+        <ul>
+          <li><a href="../../" title="Back to the awsm.css site">Back</a></li>
+          <li><a href="index.html" title="Main page of blog example">Main page</a></li>
+          <li>Popular</li>
+          <li><a href="tags.html" title="Page with list of tags">Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header>
+          <p>15 June 2016, 22:29</p>
+          <h1><a href="dont-use-flexbox-for-page-layout.html" title="Don't use flexbox for page layout">Don't use flexbox for page layout</a></h1>
+        </header>
+        <p>Seriously. Do not use.</p>
+        <p>
+          If you start to use flexbox, then you won't be able to get rid of flexbox model.
+          And your content will rule of your layout.
+          You will get strange bugs with overflow, growing, shrinking, etc. 
+          <var>flex-grow</var> and 
+          <var>flex-shring</var>
+          will be your friends forever.
+          And each of your component will affect on his children without your participation.
+        </p>
+        <p>So, don't do that. <a href="https://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/" title="Article in a blog of Jake Archibald.">Listen Jake</a> if you don't believe me.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Igor Adamenko</p>
+    </footer>
+  </body>
+</html>

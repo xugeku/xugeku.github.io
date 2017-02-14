@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins</title>
+    <link rel="stylesheet" href="css/awsm.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>awsm.css</h1>
+      <p>It makes your <abbr title="HyperText Markup Language is the standard markup language for creating web pages and web applications.">HTML</abbr> beautiful
+      </p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Overview</a></li>
+          <li><a href="elements.html">Elements</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li>Plugins</li>
+          <li><a href="https://github.com/igoradamenko/awsm.css" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Plugins</h1>
+        <p>There are some plugins that I advice you to use with awsm.css.</p>
+        <section>
+          <h2><a id="fotorama" href="#fotorama" aria-hidden="true"></a>Fotorama
+          </h2>
+          <p>It's simple and powerful jQuery gallery by Artem Polikarpov. Homepage of the plugin — <a href="http://fotorama.io/" title="Fotorama">fotorama.io</a>
+            .
+            Demo:
+          </p>
+          <div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%"><img src="http://s.fotorama.io/okonechnikov/1-lo.jpg" alt="Example image"><img src="http://s.fotorama.io/okonechnikov/2-lo.jpg" alt="Example image"><img src="http://s.fotorama.io/okonechnikov/9-lo.jpg" alt="Example image"><img src="http://s.fotorama.io/okonechnikov/6-lo.jpg" alt="Example image"><img src="http://s.fotorama.io/okonechnikov/5-lo.jpg" alt="Example image">
+          </div>
+          <p>Photos <a href="http://okonet.ru/">by Andrey Okonetchnikov</a>
+          </p>
+        </section>
+        <section>
+          <h2><a id="highlightjs-prismjs" href="#highlightjs-prismjs" aria-hidden="true"></a>highlight.js & prism.js
+          </h2>
+          <p>
+            The best syntax highlight libraries. First of them has more themes, but sometimes second works better.
+            Which one to use? Up to you.
+          </p>
+          <p>Homepages: <a href="https://highlightjs.org/" title="highlight.js">highlightjs.org</a> & <a href="http://prismjs.com/" title="http://prism.js">prismjs.com</a>
+            .
+            Demo of prism.js you can see below.
+          </p>
+          <pre><code class="language-scss">@import 'mixins';
+@import 'variables';
+
+//- Basic
+
+html {
+  font-family: font('serif');
+  font-size: 100%;
+  line-height: size('line-height-max');
+  background: color('secondary');
+  color: color('primary');
+  -webkit-overflow-scrolling: touch;
+}</code></pre>
+        </section>
+        <section>
+          <h2><a id="zoomjs" href="#zoomjs" aria-hidden="true"></a>ZOOM.JS
+          </h2>
+          <p>It's a pure JavaScript image zooming plugin; as seen on <a href="https://medium.design/image-zoom-on-medium-24d146fc0c20" title="Article “Image zoom – Designing Medium”" target="_blank">Medium.com</a>. Check the demo below (click to the image). <a href="https://github.com/nishanths/zoom.js" title="Project on the GitHub" target="_blank">Homepage</a>.
+          </p><img src="images/zoom.js.jpeg" alt="Beautiful photo of buildings in a city" data-action="zoom">
+        </section>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/themes/prism-solarizedlight.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/components/prism-scss.min.js"></script>
+        <script src="https://unpkg.com/@nishanths/zoom.js@2.0.1/dist/zoom.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@nishanths/zoom.js@2.0.1/css/zoom.css">
+        <style>
+          /* move prism.js paddings from pre to code */
+          pre[class*=language-] {
+            padding: 0;
+          }
+          
+          pre[class*=language-] code {
+            padding: 1em;
+          }
+        </style>
+      </article>
+    </main>
+    <footer>
+      <p>Igor Adamenko</p>
+    </footer>
+  </body>
+</html>

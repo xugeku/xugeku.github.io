@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main setting in Chrome — Igor Adamenko</title>
+    <link rel="stylesheet" href="../../css/awsm.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+      /* for beautiful back link */
+      nav li:first-child a::before {
+        content: '←\a0';
+        left: -1.2em;
+      }
+      
+      @media (min-width: 700px) {
+        nav li:first-child a::before {
+          position: absolute;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Igor Adamenko</h1>
+      <nav>
+        <ul>
+          <li><a href="../../" title="Back to the awsm.css site">Back</a></li>
+          <li><a href="index.html" title="Main page of blog example">Main page</a></li>
+          <li><a href="popular.html" title="Popular articles">Popular</a></li>
+          <li><a href="tags.html" title="Page with list of tags">Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header>
+          <p>30 September 2016, 20:40</p>
+          <h1>Main setting in Chrome</h1>
+        </header>
+        <p>
+          Chromium-based browsers on Mac have one important feature that I don't remember on Window—setting “Warn Before Quitting (⌘Q)”.
+          If you check it, then <kbd>Cmd</kbd> + <kbd>Q</kbd> 
+          won't close browser immediately.
+          It shows warning:
+        </p><img src="../../images/chrome.png" alt="Warning: Hold ⌘Q to Quit.">
+        <footer>
+          <p><a href="#tag-browsers" title="There is a fake link, just for demo">browsers</a>, <a href="#tag-interfaces" title="There is a fake link, just for demo">interfaces</a>
+          </p>
+        </footer>
+      </article>
+    </main>
+    <footer>
+      <p>Igor Adamenko</p>
+    </footer>
+  </body>
+</html>
